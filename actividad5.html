@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5</title>
+</head>
+
+<body>
+    <script>
+        let nombre = prompt("Nombre completo:");
+        let profesion = prompt("¿A qué te dedicas?");
+        let correo = prompt("Correo electrónico:");
+        let tarjeta = {
+            nombre: nombre,
+            profesion: profesion,
+            correo: correo
+        };
+
+        function generarTarjeta(usuario) {
+            return `-------- Tarjeta Personal --------
+            Nombre: ${usuario.nombre}
+            Profesión: ${usuario.profesion}
+            Email: ${usuario.correo}
+            -----------------------------------`;
+        }
+
+        console.log(generarTarjeta(tarjeta));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 6</title>
+</head>
+<body>
+    <script>
+        let secreto = Math.floor(Math.random() * 10) + 1;
+        let intento;
+        let intentos = 0;
+
+        while (intento !== secreto) {
+            intento = parseInt(prompt("Adivina el número (del 1 al 10):"));
+            intentos++;
+            if (intento === secreto) {
+                alert(`¡Felicidades! Acertaste. Número: ${secreto}. Intentos: ${intentos}`);
+                break;
+            } else {
+                alert("Sigue intentando...");
+            }
+        }
+    </script>
+</body>
+
+</html>

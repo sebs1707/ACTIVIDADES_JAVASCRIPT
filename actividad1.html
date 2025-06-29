@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1</title>
+</head>
+
+<body>
+    <script>
+        let nombre = prompt("Hola, ¿cómo te llamas?");
+        let edad = parseInt(prompt("¿Cuántos años tienes?"));
+        let mensaje = "¡Bienvenido a este curso de JavaScript!, " + nombre + "!";
+
+        if (edad >= 18) {
+            mensaje += " Eres mayor de edad.";
+        } else {
+            mensaje += " Eres menor de edad.";
+        }
+
+        alert(mensaje);
+        console.log(`Usuario: ${nombre}, Edad: ${edad}`);
+    </script>
+</body>
+
+</html>

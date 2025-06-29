@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 7</title>
+</head>
+<body>
+  <script>
+    function calcular(a, b, operacion) {
+      if (operacion === "+") return a + b;
+      else if (operacion === "-") return a - b;
+      else if (operacion === "*") return a * b;
+      else if (operacion === "/") return b !== 0 ? a / b : "Error: División por cero";
+      else return "Operación no reconocida";
+    }
+
+    let num1 = parseFloat(prompt("Ingresa el primer número:"));
+    let num2 = parseFloat(prompt("Ingresa el segundo número:"));
+    let op = prompt("¿Qué operación deseas realizar? (+, -, *, /)");
+
+    alert(`Resultado final: ${calcular(num1, num2, op)}`);
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4</title>
+</head>
+<body>
+  <script>
+    let frutas = ["Manzana", "Banana", "Pera", "Uva"];
+
+    frutas.forEach((fruta, index) => {
+      console.log(`Fruta #${index + 1}: ${fruta}`);
+    });
+
+    let nuevaFruta = prompt("Agrega una nueva fruta a la lista:");
+    frutas.push(nuevaFruta);
+
+    console.log("Lista actualizada de frutas:");
+    frutas.forEach((fruta, i) => {
+      console.log(`${i + 1}. ${fruta}`);
+    });
+  </script>
+</body>
+</html>
